@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Account",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "know the initial balance",
+      "store transactions",
+      "print transactions",
+      ""
+    ],
+    "collaborators": [
+      "Printer"
+    ]
+  },
+  {
+    "name": "Account Printer",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Know the balance after all transactions -> know transactions + know initial balance",
+      "Know the header of the printing",
+      "Know the format of the transaction printing"
+    ],
+    "collaborators": [
+      "Account",
+      "PrintingHeader",
+      "Transaction+balance printer"
+    ]
+  },
+  {
+    "name": "Clock",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "provide the time"
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "transaction",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "store changes in balance at a given time",
+      "know the time"
+    ],
+    "collaborators": [
+      "clock"
+    ]
+  }
+]
